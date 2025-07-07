@@ -32,7 +32,7 @@ export const TodoModal: React.FC = () => {
           setIsLoading(false);
         });
     }
-  }, [selectedTodo?.userId]);
+  }, [selectedTodo]);
 
   if (isLoading) {
     return (

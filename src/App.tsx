@@ -20,7 +20,7 @@ export const App: React.FC = () => {
     getTodos()
       .then(data => dispatch(todosSlice.actions.setTodos(data)))
       .finally(() => setIsLoading(false));
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
