@@ -50,7 +50,8 @@ export const TodoModal: React.FC = () => {
       {error ? (
         <div className="modal-card">
           <header className="modal-card-head">
-            <button type="button" className="delete" data-cy="modal-close" />
+            <button type="button" className="delete" data-cy="modal-close"
+            onClick={closeTodo}/>
           </header>
 
           <div className="modal-card-body">
